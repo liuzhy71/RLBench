@@ -9,29 +9,28 @@ from pyrep.robots.end_effectors.jaco_gripper import JacoGripper
 from pyrep.robots.end_effectors.mico_gripper import MicoGripper
 from pyrep.robots.end_effectors.baxter_gripper import BaxterGripper
 
-from rlbench import utils
-from rlbench.demo import Demo
+from RLBench.rlbench import utils
+from RLBench.rlbench.demo import Demo
 
-from rlbench.sim2real.domain_randomization import RandomizeEvery, \
+from RLBench.rlbench.sim2real.domain_randomization import RandomizeEvery, \
     VisualRandomizationConfig, DynamicsRandomizationConfig
 
-from rlbench.sim2real.domain_randomization_scene import DomainRandomizationScene
+from RLBench.rlbench.sim2real.domain_randomization_scene import DomainRandomizationScene
 
-from rlbench.backend.scene import Scene
-from rlbench.backend.task import Task
-from rlbench.backend.const import *
-from rlbench.backend.robot import Robot
+from RLBench.rlbench.backend.scene import Scene
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.const import *
+from RLBench.rlbench.backend.robot import Robot
 from os.path import exists, dirname, abspath, join
 import importlib
 from typing import Type, List
-from rlbench.observation_config import ObservationConfig
-from rlbench.task_environment import TaskEnvironment
-from rlbench.action_modes import ActionMode, ArmActionMode
+from RLBench.rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.task_environment import TaskEnvironment
+from RLBench.rlbench.action_modes import ActionMode, ArmActionMode
 
 major, minor = pyrep_version.split('.')
 if int(major) < 1 and int(minor) < 2:
     raise ImportError('Must have PyRep version 1.2 or greater.')
-
 
 DIR_PATH = dirname(abspath(__file__))
 
@@ -48,14 +47,14 @@ SUPPORTED_ROBOTS = {
 class Environment(object):
     """Each environment has a scene."""
 
-    def __init__(self, action_mode: ActionMode, dataset_root: str='',
+    def __init__(self, action_mode: ActionMode, dataset_root: str = '',
                  obs_config=ObservationConfig(), headless=False,
-                 static_positions: bool=False,
+                 static_positions: bool = False,
                  robot_configuration='panda',
-                 randomize_every: RandomizeEvery=None,
-                 frequency: int=1,
-                 visual_randomization_config: VisualRandomizationConfig=None,
-                 dynamics_randomization_config: DynamicsRandomizationConfig=None,
+                 randomize_every: RandomizeEvery = None,
+                 frequency: int = 1,
+                 visual_randomization_config: VisualRandomizationConfig = None,
+                 dynamics_randomization_config: DynamicsRandomizationConfig = None,
                  attach_grasped_objects: bool = True
                  ):
 
@@ -77,8 +76,8 @@ class Environment(object):
                              str(SUPPORTED_ROBOTS.keys()))
 
         if (randomize_every is not None and
-                    visual_randomization_config is None and
-                    dynamics_randomization_config is None):
+                visual_randomization_config is None and
+                dynamics_randomization_config is None):
             raise ValueError(
                 'If domain randomization is enabled, must supply either '
                 'visual_randomization_config or dynamics_randomization_config')
@@ -106,7 +105,7 @@ class Environment(object):
               self._action_mode.arm == ArmActionMode.EE_POSE_EE_FRAME):
             self._robot.arm.set_control_loop_enabled(True)
         elif (self._action_mode.arm == ArmActionMode.ABS_JOINT_TORQUE or
-                self._action_mode.arm == ArmActionMode.DELTA_JOINT_TORQUE):
+              self._action_mode.arm == ArmActionMode.DELTA_JOINT_TORQUE):
             self._robot.arm.set_control_loop_enabled(False)
         else:
             raise RuntimeError('Unrecognised action mode.')
@@ -212,5 +211,3 @@ class Environment(object):
             amount, image_paths, self._dataset_root, variation_number,
             task_name, self._obs_config)
         return demos
-
-

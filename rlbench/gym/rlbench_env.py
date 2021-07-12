@@ -5,9 +5,9 @@ from gym import spaces
 from pyrep.const import RenderMode
 from pyrep.objects.dummy import Dummy
 from pyrep.objects.vision_sensor import VisionSensor
-from rlbench.environment import Environment
-from rlbench.action_modes import ArmActionMode, ActionMode
-from rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.action_modes import ArmActionMode, ActionMode
+from RLBench.rlbench.observation_config import ObservationConfig
 import numpy as np
 
 

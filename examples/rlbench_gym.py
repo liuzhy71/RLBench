@@ -10,7 +10,7 @@ for i in range(training_steps):
         print('Reset Episode')
         obs = env.reset()
     obs, reward, terminate, _ = env.step(env.action_space.sample())
-    env.render()  # Note: rendering increases step time.
+    # env.render()  # Note: rendering increases step time.
 
 print('Done')
 env.close()
