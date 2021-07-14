@@ -7,12 +7,12 @@ from typing import List
 import numpy as np
 from PIL import Image
 from natsort import natsorted
-from pyrep.objects import VisionSensor
+from PyRep.pyrep.objects import VisionSensor
 
-from rlbench.backend.const import *
-from rlbench.backend.utils import image_to_float_array, rgb_handles_to_mask
-from rlbench.demo import Demo
-from rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.backend.const import *
+from RLBench.rlbench.backend.utils import image_to_float_array, rgb_handles_to_mask
+from RLBench.rlbench.demo import Demo
+from RLBench.rlbench.observation_config import ObservationConfig
 
 
 class InvalidTaskName(Exception):

@@ -1,10 +1,10 @@
 from typing import List
 import math
-from pyrep.objects.shape import Shape
-from pyrep.objects.joint import Joint
-from pyrep.objects.object import Object
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.robots.end_effectors.gripper import Gripper
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.joint import Joint
+from PyRep.pyrep.objects.object import Object
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.robots.end_effectors.gripper import Gripper
 
 
 class Condition(object):

@@ -1,18 +1,18 @@
 from multiprocessing import Process, Manager
 
-from pyrep.const import RenderMode
+from PyRep.pyrep.const import RenderMode
 
-from rlbench import ObservationConfig
-from rlbench.action_modes import ActionMode
-from rlbench.backend.utils import task_file_to_task_class
-from rlbench.environment import Environment
-import rlbench.backend.task as task
+from RLBench.rlbench import ObservationConfig
+from RLBench.rlbench.action_modes import ActionMode
+from RLBench.rlbench.backend.utils import task_file_to_task_class
+from RLBench.rlbench.environment import Environment
+import RLBench.rlbench.backend.task as task
 
 import os
 import pickle
 from PIL import Image
-from rlbench.backend import utils
-from rlbench.backend.const import *
+from RLBench.rlbench.backend import utils
+from RLBench.rlbench.backend.const import *
 import numpy as np
 
 from absl import app

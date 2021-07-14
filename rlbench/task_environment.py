@@ -3,20 +3,20 @@ from typing import List, Callable
 
 import numpy as np
 from pyquaternion import Quaternion
-from pyrep import PyRep
-from pyrep.const import ObjectType, ConfigurationPathAlgorithms
-from pyrep.errors import IKError
-from pyrep.objects import Dummy
+from PyRep.pyrep import PyRep
+from PyRep.pyrep.const import ObjectType, ConfigurationPathAlgorithms
+from PyRep.pyrep.errors import IKError
+from PyRep.pyrep.objects import Dummy
 
-from rlbench import utils
-from rlbench.action_modes import ArmActionMode, ActionMode
-from rlbench.backend.exceptions import BoundaryError, WaypointError
-from rlbench.backend.observation import Observation
-from rlbench.backend.robot import Robot
-from rlbench.backend.scene import Scene
-from rlbench.backend.task import Task
-from rlbench.demo import Demo
-from rlbench.observation_config import ObservationConfig
+from RLBench.rlbench import utils
+from RLBench.rlbench.action_modes import ArmActionMode, ActionMode
+from RLBench.rlbench.backend.exceptions import BoundaryError, WaypointError
+from RLBench.rlbench.backend.observation import Observation
+from RLBench.rlbench.backend.robot import Robot
+from RLBench.rlbench.backend.scene import Scene
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.demo import Demo
+from RLBench.rlbench.observation_config import ObservationConfig
 
 _TORQUE_MAX_VEL = 9999
 _DT = 0.05

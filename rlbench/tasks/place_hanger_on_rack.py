@@ -1,9 +1,9 @@
 from typing import List
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.objects.shape import Shape
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import DetectedCondition, NothingGrasped
-from rlbench.backend.spawn_boundary import SpawnBoundary
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.objects.shape import Shape
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition, NothingGrasped
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
 
 
 class PlaceHangerOnRack(Task):

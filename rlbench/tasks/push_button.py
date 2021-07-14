@@ -1,8 +1,8 @@
 from typing import List
-from pyrep.objects.shape import Shape
-from pyrep.objects.joint import Joint
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import JointCondition,ConditionSet
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.joint import Joint
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import JointCondition,ConditionSet
 
 # button top plate and wrapper will be be red before task completion
 # and be changed to cyan upon success of task, so colors list used to randomly vary colors of

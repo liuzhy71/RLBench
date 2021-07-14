@@ -107,9 +107,9 @@ collection of X training tasks and 5 tests tasks. Here X can be 10, 25, 50, or 9
 For example, to work on the task set with 10 training tasks, we import `FS10_V1`:
 
 ```python
-from rlbench.environment import Environment
-from rlbench.action_modes import ActionMode, ArmActionMode
-from rlbench.tasks import FS10_V1
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.action_modes import ActionMode, ArmActionMode
+from RLBench.rlbench.tasks import FS10_V1
 import numpy as np
 
 action_mode = ActionMode(ArmActionMode.ABS_JOINT_VELOCITY)
@@ -130,9 +130,9 @@ A full example can be seen in [examples/few_shot_rl.py](examples/few_shot_rl.py)
 ### Reinforcement Learning
 
 ```python
-from rlbench.environment import Environment
-from rlbench.action_modes import ActionMode, ArmActionMode
-from rlbench.tasks import ReachTarget
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.action_modes import ActionMode, ArmActionMode
+from RLBench.rlbench.tasks import ReachTarget
 import numpy as np
 
 action_mode = ActionMode(ArmActionMode.ABS_JOINT_VELOCITY)
@@ -151,11 +151,11 @@ If you would like to bootstrap from demonstrations, then take a look at [example
 ### Sim-to-Real
 
 ```python
-from rlbench import DomainRandomizationEnvironment
-from rlbench import RandomizeEvery
-from rlbench import VisualRandomizationConfig
-from rlbench.action_modes import ActionMode, ArmActionMode
-from rlbench.tasks import OpenDoor
+from RLBench.rlbench import DomainRandomizationEnvironment
+from RLBench.rlbench import RandomizeEvery
+from RLBench.rlbench import VisualRandomizationConfig
+from RLBench.rlbench.action_modes import ActionMode, ArmActionMode
+from RLBench.rlbench.tasks import OpenDoor
 import numpy as np
 
 # We will borrow some from the tests dir
@@ -179,9 +179,9 @@ A full example can be seen in [examples/single_task_rl_domain_randomization.py](
 ### Imitation Learning
 
 ```python
-from rlbench.environment import Environment
-from rlbench.action_modes import ArmActionMode, ActionMode
-from rlbench.tasks import ReachTarget
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.action_modes import ArmActionMode, ActionMode
+from RLBench.rlbench.tasks import ReachTarget
 import numpy as np
 
 # To use 'saved' demos, set the path below
@@ -213,9 +213,9 @@ collection of X training tasks. Here X can be 15, 30, 55, or 100.
 For example, to work on the task set with 15 training tasks, we import `MT15_V1`:
 
 ```python
-from rlbench.environment import Environment
-from rlbench.action_modes import ActionMode, ArmActionMode
-from rlbench.tasks import MT15_V1
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.action_modes import ActionMode, ArmActionMode
+from RLBench.rlbench.tasks import MT15_V1
 import numpy as np
 
 action_mode = ActionMode(ArmActionMode.ABS_JOINT_VELOCITY)

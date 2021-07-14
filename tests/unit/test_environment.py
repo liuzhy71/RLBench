@@ -3,11 +3,11 @@ from os import path
 
 from pyrep.objects import Dummy
 
-from rlbench import environment
-from rlbench.task_environment import TaskEnvironment
-from rlbench.tasks import TakeLidOffSaucepan, ReachTarget
-from rlbench.action_modes import ArmActionMode, ActionMode
-from rlbench.observation_config import ObservationConfig
+from RLBench.rlbench import environment
+from RLBench.rlbench.task_environment import TaskEnvironment
+from RLBench.rlbench.tasks import TakeLidOffSaucepan, ReachTarget
+from RLBench.rlbench.action_modes import ArmActionMode, ActionMode
+from RLBench.rlbench.observation_config import ObservationConfig
 import numpy as np
 ASSET_DIR = path.join(path.dirname(path.abspath(__file__)), 'assets', 'tasks')
 

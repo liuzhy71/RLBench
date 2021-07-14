@@ -1,11 +1,11 @@
 from typing import List, Tuple
 
-from pyrep.objects.joint import Joint
-from pyrep.objects.shape import Shape
-from pyrep.objects.dummy import Dummy
-from pyrep.objects.proximity_sensor import ProximitySensor
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import DetectedCondition, JointCondition, \
+from PyRep.pyrep.objects.joint import Joint
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.dummy import Dummy
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition, JointCondition, \
     NothingGrasped
 
 OPTIONS = ['left', 'right']

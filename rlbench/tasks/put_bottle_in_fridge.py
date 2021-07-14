@@ -1,12 +1,12 @@
 from typing import List, Tuple
 
 import numpy as np
-from pyrep.objects.object import Object
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.objects.shape import Shape
+fromRLBench.rlbench.objects.object import Object
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.objects.shape import Shape
 
-from rlbench.backend.conditions import DetectedCondition, NothingGrasped
-from rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition, NothingGrasped
+from RLBench.rlbench.backend.task import Task
 
 
 class PutBottleInFridge(Task):

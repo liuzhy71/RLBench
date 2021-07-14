@@ -1,10 +1,10 @@
 from typing import List
-from pyrep.const import PrimitiveShape
-from pyrep.objects.shape import Shape
-from pyrep.objects.proximity_sensor import ProximitySensor
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import EmptyCondition
-from rlbench.backend.spawn_boundary import SpawnBoundary
+from PyRep.pyrep.const import PrimitiveShape
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import EmptyCondition
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
 
 DIRT_POINTS = 50
 

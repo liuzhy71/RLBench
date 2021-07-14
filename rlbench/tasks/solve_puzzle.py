@@ -1,10 +1,10 @@
 from typing import List
 
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.objects.shape import Shape
 
-from rlbench.backend.conditions import NothingGrasped, DetectedCondition
-from rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import NothingGrasped, DetectedCondition
+from RLBench.rlbench.backend.task import Task
     
 
 class SolvePuzzle(Task):

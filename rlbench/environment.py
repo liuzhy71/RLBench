@@ -1,36 +1,36 @@
 import pickle
 
-from pyrep import PyRep
-from pyrep.objects import VisionSensor
-from pyrep.robots.arms.panda import Panda
-from pyrep.robots.arms.jaco import Jaco
-from pyrep.robots.arms.mico import Mico
-from pyrep.robots.arms.sawyer import Sawyer
-from pyrep.robots.arms.ur5 import UR5
-from pyrep.robots.end_effectors.panda_gripper import PandaGripper
-from pyrep.robots.end_effectors.jaco_gripper import JacoGripper
-from pyrep.robots.end_effectors.mico_gripper import MicoGripper
-from pyrep.robots.end_effectors.baxter_gripper import BaxterGripper
-from pyrep.robots.end_effectors.robotiq85_gripper import Robotiq85Gripper
+from PyRep.pyrep import PyRep
+from PyRep.pyrep.objects import VisionSensor
+from PyRep.pyrep.robots.arms.panda import Panda
+from PyRep.pyrep.robots.arms.jaco import Jaco
+from PyRep.pyrep.robots.arms.mico import Mico
+from PyRep.pyrep.robots.arms.sawyer import Sawyer
+from PyRep.pyrep.robots.arms.ur5 import UR5
+from PyRep.pyrep.robots.end_effectors.panda_gripper import PandaGripper
+from PyRep.pyrep.robots.end_effectors.jaco_gripper import JacoGripper
+from PyRep.pyrep.robots.end_effectors.mico_gripper import MicoGripper
+from PyRep.pyrep.robots.end_effectors.baxter_gripper import BaxterGripper
+from PyRep.pyrep.robots.end_effectors.robotiq85_gripper import Robotiq85Gripper
 
-from rlbench import utils
-from rlbench.demo import Demo
+from RLBench.rlbench import utils
+from RLBench.rlbench.demo import Demo
 
-from rlbench.sim2real.domain_randomization import RandomizeEvery, \
+from RLBench.rlbench.sim2real.domain_randomization import RandomizeEvery, \
     VisualRandomizationConfig, DynamicsRandomizationConfig
 
-from rlbench.sim2real.domain_randomization_scene import DomainRandomizationScene
+from RLBench.rlbench.sim2real.domain_randomization_scene import DomainRandomizationScene
 
-from rlbench.backend.scene import Scene
-from rlbench.backend.task import Task
-from rlbench.backend.const import *
-from rlbench.backend.robot import Robot
+from RLBench.rlbench.backend.scene import Scene
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.const import *
+from RLBench.rlbench.backend.robot import Robot
 from os.path import exists, dirname, abspath, join
 import importlib
 from typing import Type, List
-from rlbench.observation_config import ObservationConfig
-from rlbench.task_environment import TaskEnvironment
-from rlbench.action_modes import ActionMode, ArmActionMode
+from RLBench.rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.task_environment import TaskEnvironment
+from RLBench.rlbench.action_modes import ActionMode, ArmActionMode
 
 
 DIR_PATH = dirname(abspath(__file__))

@@ -2,12 +2,12 @@ from typing import List
 import itertools
 import math
 import numpy as np
-from pyrep.objects.shape import Shape
-from pyrep.objects.dummy import Dummy
-from pyrep.objects.joint import Joint
-from rlbench.backend.task import Task
-from rlbench.backend.spawn_boundary import SpawnBoundary
-from rlbench.backend.conditions import JointCondition, ConditionSet
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.dummy import Dummy
+from PyRep.pyrep.objects.joint import Joint
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
+from RLBench.rlbench.backend.conditions import JointCondition, ConditionSet
 
 MAX_TARGET_BUTTONS = 3
 MAX_VARIATIONS = 50

@@ -1,10 +1,10 @@
 from typing import List, Tuple
 import numpy as np
-from pyrep.objects.shape import Shape
-from pyrep.objects.joint import Joint
-from pyrep.objects.object import Object
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import JointCondition
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.joint import Joint
+from PyRep.pyrep.objects.object import Object
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import JointCondition
 
 
 class OpenDoor(Task):

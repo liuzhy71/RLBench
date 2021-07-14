@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 import gym
-import rlbench.gym
+import RLBench.rlbench.gym
 
 
 class TestGym(unittest.TestCase):

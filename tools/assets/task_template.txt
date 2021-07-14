@@ -1,5 +1,5 @@
 from typing import List
-from rlbench.backend.task import Task
+from RLBench.rlbench.backend.task import Task
 
 
 class %s(Task):

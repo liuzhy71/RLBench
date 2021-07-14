@@ -1,13 +1,13 @@
 from typing import List, Tuple
 import numpy as np
-from pyrep.objects.shape import Shape
-from pyrep.objects.dummy import Dummy
-from pyrep.objects.proximity_sensor import ProximitySensor
-from rlbench.backend.task import Task
-from rlbench.backend.spawn_boundary import SpawnBoundary
-from rlbench.backend.conditions import DetectedCondition, \
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.dummy import Dummy
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
+from RLBench.rlbench.backend.conditions import DetectedCondition, \
     NothingGrasped, ConditionSet
-from rlbench.const import colors
+from RLBench.rlbench.const import colors
 
 
 class PutPlateInColoredDishRack(Task):

@@ -1,9 +1,9 @@
 from typing import List, Tuple
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.objects.shape import Shape
-from pyrep.objects.object import Object
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import DetectedCondition
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.object import Object
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition
 
 
 class EmptyDishwasher(Task):

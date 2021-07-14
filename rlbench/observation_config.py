@@ -1,5 +1,5 @@
-from pyrep.const import RenderMode
-from rlbench.noise_model import NoiseModel, Identity
+from PyRep.pyrep.const import RenderMode
+from RLBench.rlbench.noise_model import NoiseModel, Identity
 
 
 class CameraConfig(object):

@@ -1,13 +1,13 @@
 from typing import List, Tuple
 import numpy as np
-from pyrep.objects.dummy import Dummy
-from pyrep.objects.shape import Shape
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.const import PrimitiveShape
-from rlbench.const import colors
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import DetectedCondition, ConditionSet
-from rlbench.backend.spawn_boundary import SpawnBoundary
+from PyRep.pyrep.objects.dummy import Dummy
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.const import PrimitiveShape
+from RLBench.rlbench.const import colors
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition, ConditionSet
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
 
 LIQUID_BALLS = 20
 

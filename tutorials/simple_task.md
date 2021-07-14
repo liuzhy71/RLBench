@@ -98,7 +98,7 @@ Now that we have created our simple scene file, we find and open *rlbench/tasks/
 
 ```python
 from typing import List
-from rlbench.backend.task import Task
+from RLBench.rlbench.backend.task import Task
 
 
 class ComplexTask(Task):
@@ -138,10 +138,10 @@ We first ensure that we import the necessary functions and classes from the pyre
 from typing import List
 from pyrep.objects.shape import Shape
 from pyrep.objects.proximity_sensor import ProximitySensor
-from rlbench.const import colors
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import DetectedCondition
-from rlbench.backend.spawn_boundary import SpawnBoundary
+from RLBench.rlbench.const import colors
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
 ```
 
 ### init_task() -> None:

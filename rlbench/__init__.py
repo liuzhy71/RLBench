@@ -9,10 +9,10 @@ if pr_v.size < 4 or np.any(pr_v < np.array([4, 1, 0, 2])):
         'PyRep version must be greater than 4.1.0.2. Please update PyRep.')
 
 
-from rlbench.environment import Environment
-from rlbench.action_modes import ArmActionMode
-from rlbench.observation_config import ObservationConfig
-from rlbench.observation_config import CameraConfig
-from rlbench.sim2real.domain_randomization import RandomizeEvery
-from rlbench.sim2real.domain_randomization import VisualRandomizationConfig
-from rlbench.sim2real.domain_randomization_environment import DomainRandomizationEnvironment
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.action_modes import ArmActionMode
+from RLBench.rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.observation_config import CameraConfig
+from RLBench.rlbench.sim2real.domain_randomization import RandomizeEvery
+from RLBench.rlbench.sim2real.domain_randomization import VisualRandomizationConfig
+from RLBench.rlbench.sim2real.domain_randomization_environment import DomainRandomizationEnvironment

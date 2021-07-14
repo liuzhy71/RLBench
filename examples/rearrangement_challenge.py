@@ -4,10 +4,10 @@ in .....
 
 """
 
-from rlbench.environment import Environment
-from rlbench.action_modes import ArmActionMode, ActionMode
-from rlbench.observation_config import ObservationConfig
-from rlbench.tasks import PutAllGroceriesInCupboard
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.action_modes import ArmActionMode, ActionMode
+from RLBench.rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.tasks import PutAllGroceriesInCupboard
 import numpy as np
 
 

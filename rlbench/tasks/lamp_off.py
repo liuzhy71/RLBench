@@ -1,8 +1,8 @@
 from typing import List
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import JointCondition
-from pyrep.objects.shape import Shape
-from pyrep.objects.joint import Joint
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import JointCondition
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.joint import Joint
 
 
 class LampOff(Task):

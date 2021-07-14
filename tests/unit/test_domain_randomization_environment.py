@@ -3,11 +3,11 @@ from os import path
 
 from pyrep.const import RenderMode
 
-from rlbench.sim2real.domain_randomization import RandomizeEvery, VisualRandomizationConfig
-from rlbench.sim2real.domain_randomization_environment import DomainRandomizationEnvironment
-from rlbench.tasks.open_microwave import OpenMicrowave
-from rlbench.action_modes import ArmActionMode, ActionMode
-from rlbench.observation_config import ObservationConfig, CameraConfig
+from RLBench.rlbench.sim2real.domain_randomization import RandomizeEvery, VisualRandomizationConfig
+from RLBench.rlbench.sim2real.domain_randomization_environment import DomainRandomizationEnvironment
+from RLBench.rlbench.tasks.open_microwave import OpenMicrowave
+from RLBench.rlbench.action_modes import ArmActionMode, ActionMode
+from RLBench.rlbench.observation_config import ObservationConfig, CameraConfig
 import numpy as np
 
 ASSET_DIR = path.join(path.dirname(path.abspath(__file__)), 'assets', 'textures')

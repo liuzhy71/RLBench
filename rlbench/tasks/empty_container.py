@@ -6,15 +6,15 @@ https://sites.google.com/site/brainrobotdata/home/models
 from typing import List
 
 import numpy as np
-from pyrep.objects.dummy import Dummy
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.dummy import Dummy
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.objects.shape import Shape
 
-from rlbench.backend.conditions import ConditionSet, DetectedCondition
-from rlbench.backend.spawn_boundary import SpawnBoundary
-from rlbench.backend.task import Task
-from rlbench.backend.task_utils import sample_procedural_objects
-from rlbench.const import colors
+from RLBench.rlbench.backend.conditions import ConditionSet, DetectedCondition
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.task_utils import sample_procedural_objects
+from RLBench.rlbench.const import colors
 
 
 class EmptyContainer(Task):

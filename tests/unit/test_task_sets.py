@@ -1,5 +1,5 @@
 import unittest
-from rlbench.tasks import (FS10_V1, FS25_V1, FS50_V1, FS95_V1, MT15_V1,
+from RLBench.rlbench.tasks import (FS10_V1, FS25_V1, FS50_V1, FS95_V1, MT15_V1,
                            MT30_V1, MT55_V1, MT100_V1)
 
 

@@ -1,11 +1,11 @@
 from typing import List, Tuple
 
 import numpy as np
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.objects.shape import Shape
 
-from rlbench.backend.conditions import DetectedCondition
-from rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition
+from RLBench.rlbench.backend.task import Task
 
 
 class TakeToiletRollOffStand(Task):

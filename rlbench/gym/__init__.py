@@ -1,8 +1,8 @@
 from gym.envs.registration import register
-import rlbench.backend.task as task
+import RLBench.rlbench.backend.task as task
 import os
-from rlbench.utils import name_to_task_class
-from rlbench.gym.rlbench_env import RLBenchEnv
+from RLBench.rlbench.utils import name_to_task_class
+from RLBench.rlbench.gym.rlbench_env import RLBenchEnv
 
 TASKS = [t for t in os.listdir(task.TASKS_PATH)
          if t != '__init__.py' and t.endswith('.py')]

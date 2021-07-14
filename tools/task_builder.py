@@ -3,25 +3,25 @@ import sys
 from os.path import join, dirname, abspath, isfile
 
 CURRENT_DIR = dirname(abspath(__file__))
-sys.path.insert(0, join(CURRENT_DIR, '..'))  # Use local RLBench rather than installed
+sys.path.insert(0, join(CURRENT_DIR, '..'))  # Use local RLBench.rlbench rather than installed
 
 import traceback
 import readline
 
-from pyrep.const import RenderMode
+from PyRep.pyrep.const import RenderMode
 
-from rlbench.backend import task
-from rlbench.backend.const import TTT_FILE
-from pyrep import PyRep
-from pyrep.robots.arms.panda import Panda
-from pyrep.objects.shape import Shape
-from pyrep.objects.dummy import Dummy
-from pyrep.robots.end_effectors.panda_gripper import PandaGripper
-from rlbench.backend.scene import Scene
-from rlbench.backend.exceptions import *
-from rlbench.observation_config import ObservationConfig, CameraConfig
-from rlbench.backend.robot import Robot
-from rlbench.utils import name_to_task_class
+from RLBench.rlbench.backend import task
+from RLBench.rlbench.backend.const import TTT_FILE
+from PyRep.pyrep import PyRep
+from PyRep.pyrep.robots.arms.panda import Panda
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.dummy import Dummy
+from PyRep.pyrep.robots.end_effectors.panda_gripper import PandaGripper
+from RLBench.rlbench.backend.scene import Scene
+from RLBench.rlbench.backend.exceptions import *
+from RLBench.rlbench.observation_config import ObservationConfig, CameraConfig
+from RLBench.rlbench.backend.robot import Robot
+from RLBench.rlbench.utils import name_to_task_class
 from task_validator import task_smoke, TaskValidationError
 
 CURRENT_DIR = dirname(abspath(__file__))

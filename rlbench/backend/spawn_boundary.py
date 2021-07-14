@@ -1,8 +1,8 @@
 from typing import List
 import numpy as np
 import math
-from rlbench.backend.exceptions import BoundaryError
-from pyrep.objects.object import Object
+from RLBench.rlbench.backend.exceptions import BoundaryError
+from PyRep.pyrep.objects.object import Object
 
 
 class BoundingBox(object):

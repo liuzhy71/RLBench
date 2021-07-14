@@ -1,7 +1,7 @@
 from typing import List, Tuple
-from pyrep.objects.joint import Joint
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import JointCondition
+from PyRep.pyrep.objects.joint import Joint
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import JointCondition
 
 
 class ToiletSeatUp(Task):

@@ -1,6 +1,6 @@
-from rlbench.environment import Environment
-from rlbench.action_modes import ActionMode, ArmActionMode
-from rlbench.tasks import FS10_V1
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.action_modes import ActionMode, ArmActionMode
+from RLBench.rlbench.tasks import FS10_V1
 import numpy as np
 
 action_mode = ActionMode(ArmActionMode.ABS_JOINT_VELOCITY)

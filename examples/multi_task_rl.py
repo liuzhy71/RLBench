@@ -1,7 +1,7 @@
-from rlbench.environment import Environment
-from rlbench.action_modes import ArmActionMode, ActionMode
-from rlbench.observation_config import ObservationConfig
-from rlbench.tasks import MT30_V1
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.action_modes import ArmActionMode, ActionMode
+from RLBench.rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.tasks import MT30_V1
 import numpy as np
 
 

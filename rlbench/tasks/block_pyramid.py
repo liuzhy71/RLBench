@@ -1,17 +1,15 @@
 from typing import List
 import numpy as np
-from pyrep.objects.shape import Shape
-from pyrep.objects.proximity_sensor import ProximitySensor
-from rlbench.backend.task import Task
-from rlbench.const import colors
-from rlbench.backend.spawn_boundary import SpawnBoundary
-from rlbench.backend.conditions import DetectedSeveralCondition, NothingGrasped, ConditionSet
-
-
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.const import colors
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
+from RLBench.rlbench.backend.conditions import DetectedSeveralCondition, NothingGrasped, ConditionSet
 
 
 class BlockPyramid(Task):
-        
+
     def init_task(self) -> None:
         self.blocks = [Shape('block_pyramid_block%d' % i) for i in range(6)]
         self.distractors = [Shape(
@@ -47,10 +45,10 @@ class BlockPyramid(Task):
             self.spawn_boundary.sample(ob, min_distance=0.08)
 
         return ['stack %s blocks in a pyramid' % color_name,
-                'create a pyramid with the %s objects' %color_name,
-                'make a pyramid out of %s cubes' %color_name,
-                'position the %s blocks in the shape of a pyramid' %color_name,
-                'use the %s blocks to build a pyramid' %color_name]
+                'create a pyramid with the %s objects' % color_name,
+                'make a pyramid out of %s cubes' % color_name,
+                'position the %s blocks in the shape of a pyramid' % color_name,
+                'use the %s blocks to build a pyramid' % color_name]
 
     def variation_count(self) -> int:
         return len(colors)

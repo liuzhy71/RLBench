@@ -1,10 +1,10 @@
-from rlbench import DomainRandomizationEnvironment
-from rlbench import RandomizeEvery
-from rlbench import VisualRandomizationConfig
-from rlbench import ArmActionMode
-from rlbench import ObservationConfig
-from rlbench.action_modes import ActionMode
-from rlbench.tasks import ReachTarget
+from RLBench.rlbench import DomainRandomizationEnvironment
+from RLBench.rlbench import RandomizeEvery
+from RLBench.rlbench import VisualRandomizationConfig
+from RLBench.rlbench import ArmActionMode
+from RLBench.rlbench import ObservationConfig
+from RLBench.rlbench.action_modes import ActionMode
+from RLBench.rlbench.tasks import ReachTarget
 import numpy as np
 
 

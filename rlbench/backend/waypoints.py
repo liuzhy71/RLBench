@@ -1,7 +1,7 @@
-from pyrep.objects.object import Object
-from pyrep.robots.configuration_paths.arm_configuration_path import (
+from PyRep.pyrep.objects.object import Object
+from PyRep.pyrep.robots.configuration_paths.arm_configuration_path import (
     ArmConfigurationPath)
-from rlbench.backend.robot import Robot
+from RLBench.rlbench.backend.robot import Robot
 
 
 class Waypoint(object):

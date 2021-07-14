@@ -1,5 +1,5 @@
-from pyrep.robots.arms.arm import Arm
-from pyrep.robots.end_effectors.gripper import Gripper
+from PyRep.pyrep.robots.arms.arm import Arm
+from PyRep.pyrep.robots.end_effectors.gripper import Gripper
 
 
 class Robot(object):

@@ -1,12 +1,12 @@
 from typing import List
-from pyrep import PyRep
-from pyrep.const import ObjectType, TextureMappingMode
-from pyrep.objects.shape import Shape
+from PyRep.pyrep import PyRep
+from PyRep.pyrep.const import ObjectType, TextureMappingMode
+from PyRep.pyrep.objects.shape import Shape
 
-from rlbench.backend.scene import Scene
-from rlbench.observation_config import ObservationConfig
-from rlbench.backend.robot import Robot
-from rlbench.sim2real.domain_randomization import RandomizeEvery
+from RLBench.rlbench.backend.scene import Scene
+from RLBench.rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.backend.robot import Robot
+from RLBench.rlbench.sim2real.domain_randomization import RandomizeEvery
 
 SCENE_OBJECTS = ['Floor', 'Roof', 'Wall1', 'Wall2', 'Wall3', 'Wall4',
                  'diningTable_visible']

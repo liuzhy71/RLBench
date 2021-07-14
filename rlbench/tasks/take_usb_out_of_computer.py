@@ -1,8 +1,8 @@
 from typing import List
-from pyrep.objects.shape import Shape
-from pyrep.objects.proximity_sensor import ProximitySensor
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import DetectedCondition, NothingGrasped
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition, NothingGrasped
 
 
 class TakeUsbOutOfComputer(Task):

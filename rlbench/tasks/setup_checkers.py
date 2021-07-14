@@ -1,10 +1,10 @@
 from typing import List
 import numpy as np
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.objects.shape import Shape
-from pyrep.objects.dummy import Dummy
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import DetectedCondition, NothingGrasped
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.dummy import Dummy
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition, NothingGrasped
 
 MAX_CHECKERS_TO_SETUP = 3
 

@@ -1,23 +1,23 @@
 from typing import List, Callable
 
 import numpy as np
-from pyrep import PyRep
-from pyrep.const import ObjectType
-from pyrep.errors import ConfigurationPathError
-from pyrep.objects import Dummy
-from pyrep.objects.shape import Shape
-from pyrep.objects.vision_sensor import VisionSensor
+from PyRep.pyrep import PyRep
+from PyRep.pyrep.const import ObjectType
+from PyRep.pyrep.errors import ConfigurationPathError
+from PyRep.pyrep.objects import Dummy
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.vision_sensor import VisionSensor
 
-from rlbench.backend.exceptions import (
+from RLBench.rlbench.backend.exceptions import (
     WaypointError, BoundaryError, NoWaypointsError, DemoError)
-from rlbench.backend.observation import Observation
-from rlbench.backend.robot import Robot
-from rlbench.backend.spawn_boundary import SpawnBoundary
-from rlbench.backend.task import Task
-from rlbench.backend.utils import rgb_handles_to_mask
-from rlbench.demo import Demo
-from rlbench.noise_model import NoiseModel
-from rlbench.observation_config import ObservationConfig, CameraConfig
+from RLBench.rlbench.backend.observation import Observation
+from RLBench.rlbench.backend.robot import Robot
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.utils import rgb_handles_to_mask
+from RLBench.rlbench.demo import Demo
+from RLBench.rlbench.noise_model import NoiseModel
+from RLBench.rlbench.observation_config import ObservationConfig, CameraConfig
 
 STEPS_BEFORE_EPISODE_START = 10
 

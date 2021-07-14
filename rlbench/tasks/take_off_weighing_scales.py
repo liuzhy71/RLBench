@@ -1,12 +1,12 @@
 from typing import List, Tuple
 import numpy as np
-from pyrep.objects.shape import Shape
-from pyrep.objects.dummy import Dummy
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.objects.joint import Joint
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import DetectedCondition, NothingGrasped
-from rlbench.backend.spawn_boundary import SpawnBoundary
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.dummy import Dummy
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.objects.joint import Joint
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition, NothingGrasped
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
 
 UNIQUE_PEPPERS_TO_TAKE_OFF = 3
 

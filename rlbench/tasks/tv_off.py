@@ -1,9 +1,9 @@
 from typing import List, Tuple
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import JointCondition
-from pyrep.objects.shape import Shape
-from pyrep.objects.joint import Joint
-from rlbench.backend.spawn_boundary import SpawnBoundary
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import JointCondition
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.joint import Joint
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
 import numpy as np
 
 

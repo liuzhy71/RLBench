@@ -4,20 +4,20 @@ from os.path import dirname, abspath, join
 from typing import List, Tuple, Callable, Union
 
 import numpy as np
-from pyrep import PyRep
-from pyrep.const import ObjectType
-from pyrep.errors import ConfigurationPathError
-from pyrep.objects.cartesian_path import CartesianPath
-from pyrep.objects.dummy import Dummy
-from pyrep.objects.force_sensor import ForceSensor
-from pyrep.objects.joint import Joint
-from pyrep.objects.object import Object
+from PyRep.pyrep import PyRep
+from PyRep.pyrep.const import ObjectType
+from PyRep.pyrep.errors import ConfigurationPathError
+from PyRep.pyrep.objects.cartesian_path import CartesianPath
+from PyRep.pyrep.objects.dummy import Dummy
+from PyRep.pyrep.objects.force_sensor import ForceSensor
+from PyRep.pyrep.objects.joint import Joint
+from PyRep.pyrep.objects.object import Object
 
-from rlbench.backend.conditions import Condition
-from rlbench.backend.exceptions import WaypointError
-from rlbench.backend.observation import Observation
-from rlbench.backend.robot import Robot
-from rlbench.backend.waypoints import Point, PredefinedPath, Waypoint
+from RLBench.rlbench.backend.conditions import Condition
+from RLBench.rlbench.backend.exceptions import WaypointError
+from RLBench.rlbench.backend.observation import Observation
+from RLBench.rlbench.backend.robot import Robot
+from RLBench.rlbench.backend.waypoints import Point, PredefinedPath, Waypoint
 
 TASKS_PATH = join(dirname(abspath(__file__)), '../tasks')
 

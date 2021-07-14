@@ -123,11 +123,11 @@ First we need to ensure that we import the necessary classes like below. In prac
 
 ```python
 from typing import List, Tuple
-from rlbench.backend.task import Task
-from rlbench.const import colors
-from rlbench.backend.task_utils import sample_procedural_objects
-from rlbench.backend.conditions import ConditionSet, DetectedCondition
-from rlbench.backend.spawn_boundary import SpawnBoundary
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.const import colors
+from RLBench.rlbench.backend.task_utils import sample_procedural_objects
+from RLBench.rlbench.backend.conditions import ConditionSet, DetectedCondition
+from RLBench.rlbench.backend.spawn_boundary import SpawnBoundary
 import numpy as np
 from pyrep.objects.shape import Shape
 from pyrep.objects.proximity_sensor import ProximitySensor

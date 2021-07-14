@@ -8,14 +8,14 @@ from absl import flags
 from pyrep.objects.dummy import Dummy
 from pyrep.objects.vision_sensor import VisionSensor
 
-from rlbench import Environment
-from rlbench.action_modes import ActionMode
-from rlbench.backend.observation import Observation
-from rlbench.backend.task import TASKS_PATH
-from rlbench.backend.task import Task
-from rlbench.backend.utils import task_file_to_task_class
-from rlbench.observation_config import ObservationConfig
-from rlbench.sim2real.domain_randomization import RandomizeEvery, \
+from RLBench.rlbench import Environment
+from RLBench.rlbench.action_modes import ActionMode
+from RLBench.rlbench.backend.observation import Observation
+from RLBench.rlbench.backend.task import TASKS_PATH
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.utils import task_file_to_task_class
+from RLBench.rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.sim2real.domain_randomization import RandomizeEvery, \
     VisualRandomizationConfig
 
 FLAGS = flags.FLAGS

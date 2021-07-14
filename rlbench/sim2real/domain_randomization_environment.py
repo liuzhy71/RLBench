@@ -1,18 +1,18 @@
 from os.path import join
-from pyrep import PyRep
-from pyrep.objects.dummy import Dummy
-from pyrep.objects.shape import Shape
-from pyrep.robots.arms.panda import Panda
-from pyrep.robots.end_effectors.panda_gripper import PandaGripper
+from PyRep.pyrep import PyRep
+from PyRep.pyrep.objects.dummy import Dummy
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.robots.arms.panda import Panda
+from PyRep.pyrep.robots.end_effectors.panda_gripper import PandaGripper
 
-from rlbench.action_modes import ActionMode
-from rlbench.backend.const import *
-from rlbench.environment import Environment
-from rlbench.environment import DIR_PATH
-from rlbench.observation_config import ObservationConfig
-from rlbench.backend.robot import Robot
-from rlbench.sim2real.domain_randomization import RandomizeEvery
-from rlbench.sim2real.domain_randomization_scene import DomainRandomizationScene
+from RLBench.rlbench.action_modes import ActionMode
+from RLBench.rlbench.backend.const import *
+from RLBench.rlbench.environment import Environment
+from RLBench.rlbench.environment import DIR_PATH
+from RLBench.rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.backend.robot import Robot
+from RLBench.rlbench.sim2real.domain_randomization import RandomizeEvery
+from RLBench.rlbench.sim2real.domain_randomization_scene import DomainRandomizationScene
 
 
 class DomainRandomizationEnvironment(Environment):

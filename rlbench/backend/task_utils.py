@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.shape import Shape
 
 
 def sample_procedural_objects(task_base, num_samples, mass=0.1):

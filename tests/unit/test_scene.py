@@ -4,14 +4,14 @@ from os.path import join
 from pyrep import PyRep
 from pyrep.robots.arms.panda import Panda
 from pyrep.robots.end_effectors.panda_gripper import PandaGripper
-from rlbench import environment
-from rlbench.backend.const import TTT_FILE
-from rlbench.backend.scene import Scene
-from rlbench.noise_model import GaussianNoise
-from rlbench.observation_config import ObservationConfig, CameraConfig
+from RLBench.rlbench import environment
+from RLBench.rlbench.backend.const import TTT_FILE
+from RLBench.rlbench.backend.scene import Scene
+from RLBench.rlbench.noise_model import GaussianNoise
+from RLBench.rlbench.observation_config import ObservationConfig, CameraConfig
 import numpy as np
-from rlbench.backend.robot import Robot
-from rlbench.tasks.reach_target import ReachTarget
+from RLBench.rlbench.backend.robot import Robot
+from RLBench.rlbench.tasks.reach_target import ReachTarget
 
 ASSET_DIR = path.join(path.dirname(path.abspath(__file__)), 'assets', 'tasks')
 

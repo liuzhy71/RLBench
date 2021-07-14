@@ -1,10 +1,10 @@
 from typing import List
 import numpy as np
-from pyrep.objects.shape import Shape
-from pyrep.objects.proximity_sensor import ProximitySensor
-from pyrep.const import PrimitiveShape
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import DetectedCondition
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.proximity_sensor import ProximitySensor
+from PyRep.pyrep.const import PrimitiveShape
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import DetectedCondition
 
 WATER_NUM = 5
 

@@ -1,8 +1,8 @@
 from typing import List, Tuple
-from pyrep.objects.shape import Shape
-from pyrep.objects.joint import Joint
-from rlbench.backend.task import Task
-from rlbench.backend.conditions import JointCondition, GraspedCondition, \
+from PyRep.pyrep.objects.shape import Shape
+from PyRep.pyrep.objects.joint import Joint
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.conditions import JointCondition, GraspedCondition, \
     ConditionSet
 
 

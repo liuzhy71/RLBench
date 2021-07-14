@@ -1,14 +1,14 @@
-from rlbench.backend.task import Task
-from rlbench.backend.scene import DemoError
-from rlbench.observation_config import ObservationConfig
+from RLBench.rlbench.backend.task import Task
+from RLBench.rlbench.backend.scene import DemoError
+from RLBench.rlbench.observation_config import ObservationConfig
 from pyrep import PyRep
 from pyrep.robots.arms.panda import Panda
 from pyrep.robots.end_effectors.panda_gripper import PandaGripper
-from rlbench.backend.const import TTT_FILE
-from rlbench.backend.scene import Scene
-from rlbench.backend.utils import task_file_to_task_class
-from rlbench.backend.task import TASKS_PATH
-from rlbench.backend.robot import Robot
+from RLBench.rlbench.backend.const import TTT_FILE
+from RLBench.rlbench.backend.scene import Scene
+from RLBench.rlbench.backend.utils import task_file_to_task_class
+from RLBench.rlbench.backend.task import TASKS_PATH
+from RLBench.rlbench.backend.robot import Robot
 import numpy as np
 import os
 import argparse
