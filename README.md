@@ -1,5 +1,4 @@
-# RLBench: Robot Learning Benchmark [![Build Status](https://travis-ci.com/stepjam/RLBench.svg?branch=master)](https://travis-ci.com/stepjam/RLBench) [![Discord](https://img.shields.io/discord/694945190867370155.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/DXPCjmd)
-
+# RLBench: Robot Learning Benchmark [![Unit Tests](https://github.com/stepjam/RLBench/workflows/Unit%20Tests/badge.svg)](https://github.com/stepjam/RLBench/actions) [![Task Tests](https://github.com/stepjam/RLBench/workflows/Task%20Tests/badge.svg)](https://github.com/stepjam/RLBench/actions) [![Discord](https://img.shields.io/discord/694945190867370155.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/DXPCjmd)
 
 ![task grid image missing](readme_files/task_grid.png)
 
@@ -12,6 +11,7 @@ few-shot learning. [Click here for website and paper.](https://sites.google.com/
 **Contents:**
 - [Announcements](#announcements)
 - [Install](#install)
+- [Running Headless](#running-headless)
 - [Getting Started](#getting-started)
     - [Few-Shot Learning and Meta Learning](#few-shot-learning-and-meta-learning)
     - [Reinforcement Learning](#reinforcement-learning)
@@ -28,6 +28,10 @@ few-shot learning. [Click here for website and paper.](https://sites.google.com/
 - [Citation](#citation)
 
 ## Announcements
+
+### 1 July, 2021
+
+- New instructions on headless GPU rendering [here](#running-headless)!
 
 ### 8 September, 2020
 
@@ -63,6 +67,32 @@ pip install .
 ```
 
 And that's it!
+
+## Running Headless
+
+You can run RLBench headlessly with VirtualGL. VirtualGL is an open source toolkit that gives any Unix or Linux remote display software the ability to run OpenGL applications **with full 3D hardware acceleration**.
+First insure that you have the nVidia proprietary driver installed. I.e. you should get an output when running `nvidia-smi`. Now run the following commands:
+```bash
+sudo apt-get install xorg libxcb-randr0-dev libxrender-dev libxkbcommon-dev libxkbcommon-x11-0 libavcodec-dev libavformat-dev libswscale-dev
+sudo nvidia-xconfig -a --use-display-device=None --virtual=1280x1024
+# Install VirtualGL
+wget https://sourceforge.net/projects/virtualgl/files/2.5.2/virtualgl_2.5.2_amd64.deb/download -O virtualgl_2.5.2_amd64.deb
+sudo dpkg -i virtualgl*.deb
+rm virtualgl*.deb
+```
+You will now need to reboot, and then start the X server:
+```bash
+sudo reboot
+nohup sudo X &
+```
+Now we are good to go! To render the application with the first GPU, you can do the following:
+```bash
+export DISPLAY=:0.0
+python my_pyrep_app.py
+```
+To render with the second GPU, you will insetad set display as: `export DISPLAY=:0.1`, and so on.
+
+**Acknowledgement**: Special thanks to Boyuan Chen (UC Berkeley) for bringing VirtualGL to my attention!
 
 ## Getting Started
 
@@ -250,6 +280,7 @@ Currently supported arms:
 - Mico arm with Mico gripper `(mico)`
 - Jaco arm with 3-finger Jaco gripper `(jaco)`
 - Sawyer arm with Baxter gripper `(sawyer)`
+- UR5 arm with Robotiq 85 gripper `(ur5)`
 
 You can then swap out the arm using `robot_configuration`:
 

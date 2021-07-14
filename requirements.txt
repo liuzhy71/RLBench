@@ -1,9 +1,6 @@
-numpy~=1.19.1
-Pillow~=7.2.0
-pyquaternion~=0.9.9
+numpy
+Pillow
+pyquaternion
 html-testRunner
-setuptools~=49.2.1
-gym~=0.17.2
-rlbench~=1.0.9
-readline~=8.0
-opencv-python~=4.3.0.38
+setuptools
+natsort
